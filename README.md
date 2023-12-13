@@ -1,7 +1,7 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
 *An end-to-end, closed-loop, language-based autonomous driving framework, which interacts with the dynamic environment via multi-modal multi-view sensor data and natural language instructions.*
 
-[[Project Page](https://github.com/opendilab/LMDrive)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Data](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
+[[Project Page](https://github.com/opendilab/LMDrive)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
 
 ****
 
