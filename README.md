@@ -1,24 +1,21 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
 ![pipeline](assets/pipeline.png)
 
-> [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), Steven L. Waslander, [Yu Liu](https://liuyu.us/),[Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
+> [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), [Steven L. Waslander](https://www.trailab.utias.utoronto.ca/stevenwaslander), [Yu Liu](https://liuyu.us/),[Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
 
 This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Driving  with Large Language Models](https://arxiv.org/abs/2312.07488). This work proposes a novel language-guided, end-to-end, closed-loop autonomous driving framework.
 
 ## Demo Video
 
 
-
-
-
-
 <div align="center">
-  <video width="900" src=""></video>
+  <video width="900" src="https://github.com/opendilab/LMDrive/assets/17512647/65b2785d-e8bc-4ec1-ac86-e077299a465d"></video>
 </div>
 
 ## Contents
 1. [Setup](#setup)
-2. [Dataset](#dataset)
+2. [Model Weigths](#lmdrive-weigths)
+3. [Dataset](#dataset)
       1. [Overview](#overview)
       1. [Data Generation](#data-generation)
       2. [Data Pre-procession](#data-pre-procession)
@@ -63,12 +60,12 @@ chmod +x setup_carla.sh
 pip install carla
 ```
 
-## LMDriver Weigths
+## LMDrive Weigths
 If you are interested in including any other details in Model Zoo, please open an issue :)
 
 
 | Version | Size |  Checkpoint | VisionEncoder | LLM-base | Driving Score(LangAuto) | Driving Score(LangAuto-short) |
-|----------|----------|-----------|-----------|---|---|---|---|---|---|---|---|---|---|---|---|
+|---------|------|------------|----------------|-----------|---|---|
 | LMDrive-1.0 (LLaVA-v1.5-7B) | 7B |  [deepcs233/LMDrive-llava-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llava-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaVA-v1.5-7B](https://huggingface.co/liuhaotian/llava-v1.5-7b) | 36.2 | 50.6|
 | LMDrive-1.0 (Vicuna-v1.5-7B) | 7B |  [deepcs233/LMDrive-vicuna-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-vicuna-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [Vicuna-v1.5-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k) | 33.5 | 45.3 |
 | LMDrive-1.0 (LLaMA-7B) | 7B |  [deepcs233/LMDrive-llama-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llama-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaMA-7B](https://huggingface.co/huggyllama/llama-7b) | 31.3 | 42.8|
