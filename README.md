@@ -3,6 +3,11 @@
 
 [[Project Page](https://github.com/opendilab/LMDrive)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fopendilab%2FLMDrive&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)
+
+
 ****
 
 <div align="center">
