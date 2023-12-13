@@ -1,7 +1,7 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
 ![pipeline](assets/pipeline.png)
 
-> [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), [Steven L. Waslander](https://www.trailab.utias.utoronto.ca/stevenwaslander), [Yu Liu](https://liuyu.us/),[Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
+> [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), [Steven L. Waslander](https://www.trailab.utias.utoronto.ca/stevenwaslander), [Yu Liu](https://liuyu.us/), [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
 
 This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Driving  with Large Language Models](https://arxiv.org/abs/2312.07488). This work proposes a novel language-guided, end-to-end, closed-loop autonomous driving framework.
 
@@ -24,7 +24,8 @@ This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Dri
       1. [Vision encoder pre-training](#vision-encoder-pre-training)
       2. [Instruction finetuning](#instruction-finetuning)
 5. [Evaluation](#evaluation)
-6. [Acknowledgements](#acknowledgements)
+6. [Citation](#citation)
+7. [Acknowledgements](#acknowledgements)
 
 ## Setup
 
@@ -328,14 +329,13 @@ If you find our repo, dataset or paper useful, please cite us as
 
 ## Acknowledgements
 This implementation is based on code from several repositories.
+- [InterFuser](https://github.com/opendilab/InterFuser)
 - [Transfuser](https://github.com/autonomousvision/transfuser)
 - [2020_CARLA_challenge](https://github.com/bradyz/2020_CARLA_challenge)
 - [CARLA Leaderboard](https://github.com/carla-simulator/leaderboard)
 - [Scenario Runner](https://github.com/carla-simulator/scenario_runner)
-- [InterFuser](https://github.com/opendilab/InterFuser)
 - [LAVIS](https://github.com/salesforce/LAVIS)
 - [pytorch-image-models](https://github.com/huggingface/pytorch-image-models)
-
 
 
 ## License
