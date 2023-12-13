@@ -1,0 +1,6 @@
+destory_hazard_actors: true
+rgb_only: false
+save_skip_frames: 2
+waypoint_disturb: 0.2
+waypoint_disturb_seed: 2023
+

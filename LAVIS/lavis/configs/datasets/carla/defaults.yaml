@@ -1,0 +1,21 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+
+datasets:
+  carla_voice: # name of the dataset builder
+    build_info:
+      annotations:
+        train:
+          storage: '/path/to/dataset_root'
+          towns: [1,2,3,4,5,6,7,10]
+          weathers: [0,1,2,3,4,5,6,7,8,9,10,11,19]
+          scale: [0.95, 1.05]
+        val:
+          storage: '/path/to/dataset_root'
+          towns: [1,2,3,4,5,6,7,10]
+          weathers: [0,1,2,3,4,5,6,7,8,9,10,11,19]
+          scale: [0.95, 1.05]
+
