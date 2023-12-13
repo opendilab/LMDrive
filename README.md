@@ -3,6 +3,8 @@
 
 [[Project Page](https://github.com/opendilab/LMDrive)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Data](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
 
+****
+
 <div align="center">
   <img width="800" src="assets/pipeline.png"></img>
 </div>
@@ -71,13 +73,13 @@ pip install carla
 If you are interested in including any other details in Model Zoo, please open an issue :)
 
 
-| Version | Size |  Checkpoint | VisionEncoder | LLM-base | Driving Score(LangAuto) | Driving Score(LangAuto-short) |
-|---------|------|------------|----------------|-----------|---|---|
+| Version | Size |  Checkpoint | VisionEncoder | LLM-base | DS (LangAuto) | DS (LangAuto-short) |
+|---------|------|------------|----------------|-----------|:---:|:---:|
 | LMDrive-1.0 (LLaVA-v1.5-7B) | 7B |  [deepcs233/LMDrive-llava-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llava-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaVA-v1.5-7B](https://huggingface.co/liuhaotian/llava-v1.5-7b) | 36.2 | 50.6|
 | LMDrive-1.0 (Vicuna-v1.5-7B) | 7B |  [deepcs233/LMDrive-vicuna-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-vicuna-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [Vicuna-v1.5-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k) | 33.5 | 45.3 |
-| LMDrive-1.0 (LLaMA-7B) | 7B |  [deepcs233/LMDrive-llama-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llama-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaMA-7B](https://huggingface.co/huggyllama/llama-7b) | 31.3 | 42.8|
+| LMDrive-1.0 (LLaMA-7B) | 7B |  [deepcs233/LMDrive-llama-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llama-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaMA-7B](https://huggingface.co/huggyllama/llama-7b) | 31.3 | 42.8 |
 
-
+*DS denotes the driving score*
 
 ## Dataset
 
