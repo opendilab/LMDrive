@@ -1,5 +1,11 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
-![pipeline](assets/pipeline.png)
+*An end-to-end, closed-loop, language-based autonomous driving framework, which interacts with the dynamic environment via multi-modal multi-view sensor data and natural language instructions.*
+
+[[Project Page](https://github.com/opendilab/LMDrive)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Data](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
+
+<div align="center">
+  <img width="800" src="assets/pipeline.png"></img>
+</div>
 
 > [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), [Steven L. Waslander](https://www.trailab.utias.utoronto.ca/stevenwaslander), [Yu Liu](https://liuyu.us/), [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
 
@@ -9,7 +15,7 @@ This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Dri
 
 
 <div align="center">
-  <video width="900" src="https://github.com/opendilab/LMDrive/assets/17512647/65b2785d-e8bc-4ec1-ac86-e077299a465d"></video>
+  <video width="800" src="https://github.com/opendilab/LMDrive/assets/17512647/65b2785d-e8bc-4ec1-ac86-e077299a465d"></video>
 </div>
 
 ## Contents
