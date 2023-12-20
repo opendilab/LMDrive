@@ -27,7 +27,7 @@ This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Dri
 
 ## Contents
 1. [Setup](#setup)
-2. [Model Weigths](#lmdrive-weigths)
+2. [Model Weights](#lmdrive-Weights)
 3. [Dataset](#dataset)
       1. [Overview](#overview)
       1. [Data Generation](#data-generation)
@@ -74,7 +74,7 @@ chmod +x setup_carla.sh
 pip install carla
 ```
 
-## LMDrive Weigths
+## LMDrive Weights
 If you are interested in including any other details in Model Zoo, please open an issue :)
 
 
