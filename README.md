@@ -9,7 +9,7 @@
 
 ## News
 
-- We released our project website [here](https://hao-shao.com/projects/lmdrive.html)
+- [12/21] We released our project website [here](https://hao-shao.com/projects/lmdrive.html)
 
 ****
 
