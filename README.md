@@ -1,7 +1,7 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
 *An end-to-end, closed-loop, language-based autonomous driving framework, which interacts with the dynamic environment via multi-modal multi-view sensor data and natural language instructions.*
 
-[[Project Page](https://hao-shao.com/projects/lmdrive.html)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset](https://huggingface.co/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
+[[Project Page](https://hao-shao.com/projects/lmdrive.html)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fopendilab%2FLMDrive&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
@@ -83,9 +83,9 @@ If you are interested in including any other details in Model Zoo, please open a
 
 | Version | Size |  Checkpoint | VisionEncoder | LLM-base | DS (LangAuto) | DS (LangAuto-short) |
 |---------|------|------------|----------------|-----------|:---:|:---:|
-| LMDrive-1.0 (LLaVA-v1.5-7B) | 7B |  [deepcs233/LMDrive-llava-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llava-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaVA-v1.5-7B](https://huggingface.co/liuhaotian/llava-v1.5-7b) | 36.2 | 50.6|
-| LMDrive-1.0 (Vicuna-v1.5-7B) | 7B |  [deepcs233/LMDrive-vicuna-v1.5-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-vicuna-v1.5-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [Vicuna-v1.5-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k) | 33.5 | 45.3 |
-| LMDrive-1.0 (LLaMA-7B) | 7B |  [deepcs233/LMDrive-llama-7b-v1.0](https://huggingface.co/deepcs233/LMDrive-llama-7b-v1.0) | [R50](https://huggingface.co/deepcs233/LMDrive-vision-encoder-r50-v1.0) | [LLaMA-7B](https://huggingface.co/huggyllama/llama-7b) | 31.3 | 42.8 |
+| LMDrive-1.0 (LLaVA-v1.5-7B) | 7B |  [LMDrive-llava-v1.5-7b-v1.0](https://huggingface.co/OpenDILabCommunity/LMDrive-llava-v1.5-7b-v1.0) | [R50](https://huggingface.co/OpenDILabCommunity/LMDrive-vision-encoder-r50-v1.0) | [LLaVA-v1.5-7B](https://huggingface.co/liuhaotian/llava-v1.5-7b) | 36.2 | 50.6|
+| LMDrive-1.0 (Vicuna-v1.5-7B) | 7B |  [LMDrive-vicuna-v1.5-7b-v1.0](https://huggingface.co/OpenDILabCommunity/LMDrive-vicuna-v1.5-7b-v1.0) | [R50](https://huggingface.co/OpenDILabCommunity/LMDrive-vision-encoder-r50-v1.0) | [Vicuna-v1.5-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k) | 33.5 | 45.3 |
+| LMDrive-1.0 (LLaMA-7B) | 7B |  [LMDrive-llama-7b-v1.0](https://huggingface.co/OpenDILabCommunity/LMDrive-llama-7b-v1.0) | [R50](https://huggingface.co/OpenDILabCommunity/LMDrive-vision-encoder-r50-v1.0) | [LLaMA-7B](https://huggingface.co/huggyllama/llama-7b) | 31.3 | 42.8 |
 
 *DS denotes the driving score*
 
@@ -93,7 +93,7 @@ If you are interested in including any other details in Model Zoo, please open a
 
 We aim to develop an intelligent driving agent that can generate driving actions based on three sources of input: 1) sensor data (multi-view camera and LiDAR), so that the agent can generate actions that are aware of and compliant with the current scene; 2) navigation instructions (e.g. lane changing, turning), so that the agent can drive to meet the requirement in natural language (instruction from humans or navigation software); and 3) human notice instruction, so that the agent can interact with humans and adapt to human's suggestions and preferences (e.g. pay attention to adversarial events, deal with long-tail events, etc).
 
-We provide a dataset with about 64K data clips, where each clip includes one navigation instruction, several notice instructions, a sequence of multi-modal multi-view sensor data, and control signals. The duration of the clip spans from 2 to 20 seconds. The dataset used in our paper can be downloaded [here](https://huggingface.co/datasets/deepcs233/LMDrive). If you want to create your own dataset, please follow the steps we've outlined below.
+We provide a dataset with about 64K data clips, where each clip includes one navigation instruction, several notice instructions, a sequence of multi-modal multi-view sensor data, and control signals. The duration of the clip spans from 2 to 20 seconds. The dataset used in our paper can be downloaded [here](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive). If you want to create your own dataset, please follow the steps we've outlined below.
 
 ### Overview
 The data is generated with ```leaderboard/team_code/auto_pilot.py``` in 8 CARLA towns using the routes and scenarios files provided at ```leaderboard/data``` on CARLA 0.9.10.1 . The dataset is collected at a high frequency (~10Hz).
@@ -252,7 +252,7 @@ The parsed misleading clips will be saved in `$DATSET_ROOT/misleading_data.txt`.
 LMDrive's training consists of two stages: 1) the vision encoder pre-training stage, to generate visual tokens from sensor inputs; and 2) the instruction-finetuning stage, to align the instruction/vision and control signal. 
 
 LMDrive is trained on 8 A100 GPUs with 80GB memory (the first stage can be trained on GPUS with 32G memory). To train on fewer GPUs, you can reduce the `batch-size` and the `learning-rate` while maintaining their proportion.
-Please download the multi-modal dataset with instructions collected in the CARLA simulator we use in the paper [here](https://huggingface.co/datasets/deepcs233/LMDrive), if you do not collect the dataset by yourself.
+Please download the multi-modal dataset with instructions collected in the CARLA simulator we use in the paper [here](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive), if you do not collect the dataset by yourself.
 
     
 ### Vision encoder pre-training
