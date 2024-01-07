@@ -19,7 +19,7 @@
 
 > [Hao Shao](http://hao-shao.com/), Yuxuan Hu, [Letian Wang](https://letianwang0.wixsite.com/myhome), [Steven L. Waslander](https://www.trailab.utias.utoronto.ca/stevenwaslander), [Yu Liu](https://liuyu.us/), [Hongsheng Li](http://www.ee.cuhk.edu.hk/~hsli/).
 
-This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Driving  with Large Language Models](https://arxiv.org/abs/2312.07488). This work proposes a novel language-guided, end-to-end, closed-loop autonomous driving framework.
+This repository contains code for the paper [LMDrive: Closed-Loop End-to-End Driving with Large Language Models](https://arxiv.org/abs/2312.07488). This work proposes a novel language-guided, end-to-end, closed-loop autonomous driving framework.
 
 ## Demo Video
 
@@ -252,7 +252,7 @@ The parsed misleading clips will be saved in `$DATSET_ROOT/misleading_data.txt`.
 LMDrive's training consists of two stages: 1) the vision encoder pre-training stage, to generate visual tokens from sensor inputs; and 2) the instruction-finetuning stage, to align the instruction/vision and control signal. 
 
 LMDrive is trained on 8 A100 GPUs with 80GB memory (the first stage can be trained on GPUS with 32G memory). To train on fewer GPUs, you can reduce the `batch-size` and the `learning-rate` while maintaining their proportion.
-Please download the multi-modal dataset with instructions collected in the CARLA simulator we use in the paper [here](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive), if you do not collect the dataset by yourself.
+Please download the multi-modal dataset with instructions collected in the CARLA simulator we use in the paper [here](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive) or [openxlab (uploading)](https://openxlab.org.cn/datasets/deepcs233/LMDrive)], if you do not collect the dataset by yourself. You can only download part of them to verify our framework or your improvement.
 
     
 ### Vision encoder pre-training
