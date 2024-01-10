@@ -62,10 +62,11 @@ cd LMDrive
 conda create -n lmdrive python=3.8
 conda activate lmdrive
 cd vision_encoder
+pip3 install -r requirements.txt
 python setup.py develop # if you have installed timm before, please uninstall it
 cd ../LAVIS
-python setup.py develop # if you have installed LAVIS before, please uninstall it
 pip3 install -r requirements.txt
+python setup.py develop # if you have installed LAVIS before, please uninstall it
 
 pip install flash-attn --no-build-isolation # optional
 ```
