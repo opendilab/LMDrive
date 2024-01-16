@@ -79,17 +79,14 @@ class LeaderboardEvaluator(object):
         # First of all, we need to create the client that will send the requests
         # to the simulator. Here we'll assume the simulator is accepting
         # requests in the localhost at port 2000.
-        print('bc1')
         self.client = carla.Client(args.host, int(args.port))
         print(args.host, args.port)
-        print('bc2')
         if args.timeout:
             self.client_timeout = float(args.timeout)
         self.client.set_timeout(self.client_timeout)
 
         self.traffic_manager = self.client.get_trafficmanager(int(args.trafficManagerPort))
 
-        print('bc3')
         dist = pkg_resources.get_distribution("carla")
         if dist.version != 'leaderboard':
             if LooseVersion(dist.version) < LooseVersion('0.9.10'):
@@ -98,9 +95,8 @@ class LeaderboardEvaluator(object):
         # Load agent
         module_name = os.path.basename(args.agent).split('.')[0]
         sys.path.insert(0, os.path.dirname(args.agent))
-        print('bc4')
         self.module_agent = importlib.import_module(module_name)
-        print('bc5')
+
 
         # Create the ScenarioManager
         self.manager = ScenarioManager(args.timeout, args.debug > 1)
@@ -112,7 +108,7 @@ class LeaderboardEvaluator(object):
         # Create the agent timer
         self._agent_watchdog = Watchdog(int(float(args.timeout)))
         signal.signal(signal.SIGINT, self._signal_handler)
-        print('bc')
+
 
     def _signal_handler(self, signum, frame):
         """
