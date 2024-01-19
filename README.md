@@ -78,6 +78,9 @@ chmod +x setup_carla.sh
 pip install carla
 ```
 
+> If you encounter some problems related to Carla, please refer to [Carla Issues](https://github.com/carla-simulator/carla/issues) and [InterFuser Issues](https://github.com/opendilab/InterFuser) first.
+
+
 ## LMDrive Weights
 If you are interested in including any other details in Model Zoo, please open an issue :)
 
