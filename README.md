@@ -9,6 +9,7 @@
 
 ## News
 
+- [1/20] We uploaded our dataset to [openxlab](https://openxlab.org.cn/datasets/deepcs233/LMDrive)
 - [12/21] We released our project website [here](https://hao-shao.com/projects/lmdrive.html)
 
 ****
