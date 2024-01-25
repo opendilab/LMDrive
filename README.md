@@ -1,7 +1,11 @@
 # LMDrive: Closed-Loop End-to-End Driving with Large Language Models
 *An end-to-end, closed-loop, language-based autonomous driving framework, which interacts with the dynamic environment via multi-modal multi-view sensor data and natural language instructions.*
 
-[[Project Page](https://hao-shao.com/projects/lmdrive.html)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset(hugging face)](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive)] [[Dataset(openxlab)](https://openxlab.org.cn/datasets/deepcs233/LMDrive)] [[Model Zoo](#lmdrive-weigths)]
+[[Project Page](https://hao-shao.com/projects/lmdrive.html)] [[Paper](https://arxiv.org/abs/2312.07488)]  [[Dataset(hugging face)](https://huggingface.co/datasets/OpenDILabCommunity/LMDrive)]  [[Model Zoo](https://huggingface.co/collections/OpenDILabCommunity/lmdrive-658aee50ce38d143c4925a98)]
+
+[[Dataset(openxlab)](https://openxlab.org.cn/datasets/deepcs233/LMDrive)]
+[[Model Zoo(openxlab)](https://openxlab.org.cn/models/detail/deepcs233/LMDrive)
+
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fopendilab%2FLMDrive&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
@@ -9,6 +13,7 @@
 
 ## News
 
+- [01/25] We uploaded our models to [openxlab](https://openxlab.org.cn/models/detail/deepcs233/LMDrive)
 - [01/23] We gived a talk at [ZhiDongXi(智东西)](https://wqpoq.xetslk.com/sl/3D1aRZ)
 - [01/20] We uploaded our dataset to [openxlab](https://openxlab.org.cn/datasets/deepcs233/LMDrive)
 - [12/21] We released our project website [here](https://hao-shao.com/projects/lmdrive.html)
