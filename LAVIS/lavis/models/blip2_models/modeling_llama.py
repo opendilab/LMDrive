@@ -411,7 +411,7 @@ class LlamaAttention(nn.Module):
 
         return attn_output, attn_weights, past_key_value
 
-'''
+
 class LlamaFlashAttention2(LlamaAttention):
     """
     Llama flash attention module. This module inherits from `LlamaAttention` as the weights of the module stays
@@ -589,7 +589,7 @@ class LlamaFlashAttention2(LlamaAttention):
             (max_seqlen_in_batch_q, max_seqlen_in_batch_k),
         )
 
-'''
+
 
 
 class LlamaDecoderLayer(nn.Module):
