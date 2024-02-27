@@ -15,7 +15,7 @@
 
 - [02/27] [LMDrive](https://arxiv.org/abs/2312.07488) is accepted by CVPR 2024 🎉🎉🎉
 - [01/25] We uploaded our models to [OpenXLab](https://openxlab.org.cn/models/detail/deepcs233/LMDrive)
-- [01/23] We gave a talk at [ZhiDongXi(智东西)](https://wqpoq.xetslk.com/sl/3D1aRZ)
+- [01/23] We gave a talk at [ZhiDongXi (智东西)](https://wqpoq.xetslk.com/sl/3D1aRZ)
 - [01/20] We uploaded our dataset to [OpenXLab](https://openxlab.org.cn/datasets/deepcs233/LMDrive)
 - [12/21] We released our project website [here](https://hao-shao.com/projects/lmdrive.html)
 
