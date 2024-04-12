@@ -194,7 +194,8 @@ cd dataset
 python init_dir.py
 cd ..
 cd data_collection
-python generate_yamls.py # You can modify FPS, waypoints distribution strength ...
+
+# You can modify FPS, waypoints distribution strength in auto_agent.yaml ...
 
 # If you do not use 4 servers, the following Python scripts are needed to modify
 python generate_bashs.py
