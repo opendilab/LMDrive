@@ -418,6 +418,8 @@ class LlamaFlashAttention2(LlamaAttention):
     untouched. The only required change would be on the forward pass where it needs to correctly call the public API of
     flash attention and deal with padding tokens in case the input contains any of them.
     """
+    def __init__(self, config: LlamaConfig):
+        super().__init__(config)
 
     def forward(
         self,
