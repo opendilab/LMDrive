@@ -89,7 +89,7 @@ class Blip2VicunaDrive(Blip2Base):
         if freeze_vit:
             for name, param in self.visual_encoder.named_parameters():
                 if not self.freeze_decoder_of_visual_encoder:
-                    if 'deocder' not in name:
+                    if 'decoder' not in name:
                         param.requires_grad = False
                 else:
                     param.requires_grad = False
