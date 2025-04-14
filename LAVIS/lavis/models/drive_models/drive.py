@@ -341,7 +341,7 @@ class Blip2VicunaDrive(Blip2Base):
             temp_end_flag_pos_list = []
             for j in range(valid_frames[i]):
                 p_before_tokens = self.llm_tokenizer(before_texts[j], return_tensors="pt", add_special_tokens=False).to(image_embeds.device)
-                p_after_tokens = self.llm_tokenizer(before_texts[j], return_tensors="pt", add_special_tokens=False).to(image_embeds.device)
+                p_after_tokens = self.llm_tokenizer(after_texts[j], return_tensors="pt", add_special_tokens=False).to(image_embeds.device)
                 p_before_embed = self.llm_model.get_input_embeddings()(p_before_tokens.input_ids)
                 p_after_embed = self.llm_model.get_input_embeddings()(p_after_tokens.input_ids)
                 p_embed = torch.cat([p_before_embed, image_embeds[i][j][None], p_after_embed], dim=1)
