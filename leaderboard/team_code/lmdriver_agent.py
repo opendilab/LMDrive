@@ -551,7 +551,7 @@ class LMDriveAgent(autonomous_agent.AutonomousAgent):
             display_data['instruction'] = "Instruction: %s" % input_data['text_input'][0]
         display_data['time'] = 'Time: %.3f. Frames: %d. End prob: %.2f' % (timestamp, len(self.visual_feature_buffer), end_prob)
         display_data['meta_control'] = 'Throttle: %.2f. Steer: %.2f. Brake: %.2f' %(
-            control.steer, control.throttle, control.brake
+            control.throttle, control.steer, control.brake
         )
         display_data['waypoints'] = 'Waypoints: (%.1f, %.1f), (%.1f, %.1f)' % (waypoints[0,0], -waypoints[0,1], waypoints[1,0], -waypoints[1,1])
         display_data['notice'] = "Notice: %s" % last_notice
