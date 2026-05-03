@@ -325,11 +325,11 @@ class CarlaVoiceDataset(BaseIODataset):
         instruction_text = np.random.choice(self.instruction_dict[str(info['instruction_id'])])
         try:
             if '[x]' in instruction_text:
-                instruction_text.replace('[x]', str(info['instruction_args'][0]))
+                instruction_text = instruction_text.replace('[x]', str(info['instruction_args'][0]))
             if 'left/right' in instruction_text:
-                instruction_text.replace('left/right', str(info['instruction_args'][1]))
+                instruction_text = instruction_text.replace('left/right', str(info['instruction_args'][1]))
             if '[y]' in instruction_text:
-                instruction_text.replace('[y]', str(info['instruction_args'][2]))
+                instruction_text = instruction_text.replace('[y]', str(info['instruction_args'][2]))
         except Exception as e:
             _logger.error(e)
             _logger.info(info)
